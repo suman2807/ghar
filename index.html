@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Construction Progress Analyzer</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Construction Progress Analyzer</h1>
+
+        <form id="upload-form">
+            <label for="activity-type">Select Type of Activity:</label>
+            <select id="activity-type" required>
+                <option value="">--Select--</option>
+                <option value="foundation">Foundation</option>
+                <option value="superstructure">Superstructure</option>
+                <option value="facade">Facade</option>
+                <option value="interiors">Interiors</option>
+            </select>
+
+            <label for="image-upload">Upload Site Image:</label>
+            <input type="file" id="image-upload" accept="image/*" required>
+
+            <button type="submit">Analyze Image</button>
+        </form>
+
+        <div id="result"></div>
+        <div id="progress-comparison"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
